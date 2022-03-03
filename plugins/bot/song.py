@@ -83,7 +83,7 @@ async def song(_, message: Message):
 
         except Exception as e:
             print(e)
-            await k.edit('❌ **Found Literary Noting! \nPlease Try Another Song or Use Correct Spelling.**')
+            await k.edit('❌ **Didn\'t found anything. \nPlease Try Another Song or Use Correct Spelling.**')
             return
     except Exception as e:
         await k.edit(

@@ -30,7 +30,7 @@ except ModuleNotFoundError:
     subprocess.check_call([sys.executable, '-m', 'pip', 'install', '-r', file, '--upgrade'])
     os.execl(sys.executable, sys.executable, *sys.argv)
 
-load_dotenv('')
+load_dotenv('bot.env')
 
 ydl_opts = {
     "geo-bypass": True,
